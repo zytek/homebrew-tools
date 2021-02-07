@@ -5,21 +5,21 @@
 class Goship < Formula
   desc "SSH utility for AWS EC2 instances (find, ssh, tunnel etc)"
   homepage "https://github.com/zytek/goship"
-  version "1.0.6-ztk2"
+  version "1.0.6-ztk3"
   license "MIT"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/zytek/goship/releases/download/v1.0.6-ztk2/goship_1.0.6-ztk2_Darwin_x86_64.tar.gz"
-    sha256 "c3f6515c0606be96cc24422dac0573d13be863c839c56733be7b982bd5e9c5e4"
+    url "https://github.com/zytek/goship/releases/download/v1.0.6-ztk3/goship_1.0.6-ztk3_Darwin_x86_64.tar.gz"
+    sha256 "1c0f924351ae151f68ae2edb68733a0d51e4f7879b13e032c127500ae09fa198"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/zytek/goship/releases/download/v1.0.6-ztk2/goship_1.0.6-ztk2_Linux_x86_64.tar.gz"
-    sha256 "3e77fb5914e9cd24664ff08926ccf1664b25d278dc8f5b02d255d8a8cfde70c7"
+    url "https://github.com/zytek/goship/releases/download/v1.0.6-ztk3/goship_1.0.6-ztk3_Linux_x86_64.tar.gz"
+    sha256 "9ebf1177807836d0fe658a53de3d630b12ee5f0e19aaf34844de0e66111ba8bb"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/zytek/goship/releases/download/v1.0.6-ztk2/goship_1.0.6-ztk2_Linux_arm64.tar.gz"
-    sha256 "3363215ef85cf1a09e12ecb767da7fcd3cc9db17170e9d4786e001a5c1ff641c"
+    url "https://github.com/zytek/goship/releases/download/v1.0.6-ztk3/goship_1.0.6-ztk3_Linux_arm64.tar.gz"
+    sha256 "11947e7a7368e1cd23f783495f06a261f4377e78b93b7aaf2cf048a3b570a7dd"
   end
 
   def install
