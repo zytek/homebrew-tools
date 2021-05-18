@@ -5,25 +5,25 @@
 class XchDownloader < Formula
   desc "Download utiity for xch-plotter.com"
   homepage "https://xch-plotter.com"
-  version "0.3"
+  version "0.4"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/zytek/xch-downloader/releases/download/v0.3/xch-downloader_0.3_Darwin_x86_64.tar.gz"
-    sha256 "2cd86c8c7624a879c12e05058a5668851e2f980ac441e60220e8ccb209a2c09e"
+    url "https://github.com/zytek/xch-downloader/releases/download/v0.4/xch-downloader_0.4_Darwin_x86_64.tar.gz"
+    sha256 "31aa83c0ce9856f4cedf5a514724b52eae51acd7dbbd4bfcd60c5693f39f81c7"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/zytek/xch-downloader/releases/download/v0.3/xch-downloader_0.3_Darwin_arm64.tar.gz"
-    sha256 "7d1f562bfb31dc724ae31f79b5bed3c831a2b4280e13895d3d6a3430226c890f"
+    url "https://github.com/zytek/xch-downloader/releases/download/v0.4/xch-downloader_0.4_Darwin_arm64.tar.gz"
+    sha256 "8265fde6e367b4bfcebcc3ef6c695ff47b0a3decedcab1e897315988e556ed71"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/zytek/xch-downloader/releases/download/v0.3/xch-downloader_0.3_Linux_x86_64.tar.gz"
-    sha256 "55d44747af60f5fec3d8f35e6afafeaf5aa58988df81e3161a0bdd02d934ff9d"
+    url "https://github.com/zytek/xch-downloader/releases/download/v0.4/xch-downloader_0.4_Linux_x86_64.tar.gz"
+    sha256 "9ae17bc321d865afe40f77989f8d89305f1ebeebb5bfc45ed9bfc92eb8c3b82b"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/zytek/xch-downloader/releases/download/v0.3/xch-downloader_0.3_Linux_arm64.tar.gz"
-    sha256 "b2184ff12d6a921de1616f9e22d9267882efa02073623781d7022c6f31195a65"
+    url "https://github.com/zytek/xch-downloader/releases/download/v0.4/xch-downloader_0.4_Linux_arm64.tar.gz"
+    sha256 "008b0909a65680102a83fba412923d0d4d673f7a2bf822d1386da9f5931e4330"
   end
 
   def install
